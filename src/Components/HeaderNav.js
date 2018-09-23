@@ -21,7 +21,7 @@ const HeaderNav = ({authState, signupModal, loginModal}) => (
             <Input type="password" label="password" s={12} />
             <Input type="email" label="Email" s={12} />
             <Link to="CommandControl">
-              <Button>Submit</Button>
+              <Button className="modal-close">Submit</Button>
             </Link>
           </Modal>
         </NavItem>

@@ -12,6 +12,7 @@ import VolunteerSignupConfirmation from '../Components/volunteerComponents/Volun
 import VolunteerSignup from '../Components/volunteerComponents/VolunteerSignup'
 import VictimForm from '../Components/victimComponents/VictimForm'
 import VictimConfirm from '../Components/victimComponents/VictimConfirm'
+import ArcGIS from '../Components/ArcGIS'
 
 import Home from './Home'
 
@@ -32,8 +33,8 @@ class App extends Component {
               <Route exact path='/VolunteerConfirm' component={ VolunteerSignupConfirmation } />
               <Route exact path='/EmergencyAssist' component={ VictimForm } />
               <Route exact path='/VictimConfirm' component={ VictimConfirm } />
-              {/* <Route exact path='/CommandControl' component={ VictimConfirm } /> */}
-
+              <Route exact path='/CommandControl' component={ ArcGIS } />
+              {/* <Route exact path='/arcgis' component={ ArcGIS } /> */}
             </Switch>
           </div>
         </BrowserRouter>

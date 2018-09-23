@@ -8,7 +8,6 @@ import HeaderNav from '../Components/HeaderNav'
 import Footer from '../Components/Footer'
 import VolunteerSignupConfirmation from '../Components/volunteerComponents/VolunteerSignupConfirmation'
 import VictimForm from '../Components/victimComponents/VictimForm'
-
 import Home from './Home'
 
 //CSS
@@ -19,14 +18,14 @@ class App extends Component {
     return (
       <div>
         <HeaderNav />
-        <VictimForm/>
-        {/* <BrowserRouter>
+        <BrowserRouter>
           <div>
             <Switch>
               <Route exact path='/' component={ Home } />
+              <Route exact path='/vicForm' component={ VictimForm } />
             </Switch>
           </div>
-        </BrowserRouter> */}
+        </BrowserRouter>
         <Footer />
       </div>
     )

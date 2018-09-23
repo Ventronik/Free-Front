@@ -1,9 +1,11 @@
 import React from 'react'
-import {Container,
+import {Button,
+        Container,
         Col,
         Row,
         Icon,
         Input} from 'react-materialize'
+import { Link } from 'react-router-dom'
 
 const VolunteerSignup = () => (
 <section className='footer'>
@@ -34,6 +36,14 @@ const VolunteerSignup = () => (
         <Row>
           <Input s={6} label="Emergency Contact Name" ><Icon>account_circle</Icon></Input>
           <Input s={6} label="Emergency Contact Number" validate type='tel'><Icon>phone</Icon></Input>
+        </Row>
+        <Row>
+          <Link to="/">
+            <Button className="light" waves='red'>Cancel</Button>
+          </Link>
+          <Link to="/VolunteerConfirm">
+            <Button waves='light'>Submit Volunteer Request</Button>
+          </Link>
         </Row>
       </Container>
     </Col>

@@ -85,7 +85,7 @@ const VictimForm = () => (
             <Button className="light" waves='red'>Cancel</Button>
           </Link>
           <Link to="/VictimConfirm">
-            <Button waves='light'>Submit Volunteer Request</Button>
+            <Button className="red" waves='light'>Submit Emergency Request</Button>
           </Link>
         </Row>
       </Container>

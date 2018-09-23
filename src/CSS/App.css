@@ -106,3 +106,16 @@ nav ul {
   margin-top: 13px;
   margin-bottom: 0px;
 }
+
+#help {
+  margin-top: 20px;
+}
+
+.HomeButtons {
+  margin: auto;
+}
+
+.volunteer {
+  margin-left: 100px;
+  background-color: rgb(10, 55, 130);
+}

@@ -1,11 +1,13 @@
 import React from 'react'
-import {Container,
+import {Button,
+        Container,
         Col,
         Collection,
         CollectionItem,
         Row,
         Icon,
         Input} from 'react-materialize'
+import { Link } from 'react-router-dom'
 
 const VictimForm = () => (
 <section className='footer'>
@@ -77,6 +79,14 @@ const VictimForm = () => (
           <Input name=' Report' type='checkbox' value='Vandalism' label='Vandalism' className='filled-in' defaultChecked='checked' />
           <Input name=' Report' type='checkbox' value='Assault' label='Assault' className='filled-in' />
           <Input type="textarea" label="Other" placeholder="Please specify" s={12} />
+        </Row>
+        <Row>
+          <Link to="/">
+            <Button className="light" waves='red'>Cancel</Button>
+          </Link>
+          <Link to="/VictimConfirm">
+            <Button waves='light'>Submit Volunteer Request</Button>
+          </Link>
         </Row>
       </Container>
     </Col>

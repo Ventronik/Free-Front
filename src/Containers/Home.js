@@ -6,13 +6,15 @@ import { Link } from 'react-router-dom'
 
 import { withAuthentication } from '../Helpers'
 import ArcGIS from '../Components/ArcGIS'
+import HomeButtons from '../Components/HomeButtons'
 
 class Home extends Component {
 
   render() {
     return(
       <div>
-        <ArcGIS />
+        <HomeButtons />
+        {/* <ArcGIS /> */}
       </div>
     )
   }

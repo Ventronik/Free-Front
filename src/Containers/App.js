@@ -27,11 +27,13 @@ class App extends Component {
             <HeaderNav />
             <Switch>
               <Route exact path='/' component={ Home } />
+
               <Route exact path='/Volunteer' component={ VolunteerSignup } />
               <Route exact path='/VolunteerConfirm' component={ VolunteerSignupConfirmation } />
               <Route exact path='/EmergencyAssist' component={ VictimForm } />
               <Route exact path='/VictimConfirm' component={ VictimConfirm } />
               {/* <Route exact path='/CommandControl' component={ VictimConfirm } /> */}
+
             </Switch>
           </div>
         </BrowserRouter>
